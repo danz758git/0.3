@@ -128,3 +128,33 @@ const NUMBER_WORDS = [
 
 export const serviceCountWord =
   NUMBER_WORDS[services.length] ?? String(services.length)
+
+// Short labels for the footer column, where the full titles are too
+// long to sit on one line. Kept here next to the titles they shorten,
+// not in Footer.jsx, so adding a service means touching one file.
+//
+// The footer was the fourth hand-written copy of this list (after the
+// cards, the contact dropdown and the About sentence) and the fourth
+// one to be missing a service that had already shipped.
+const SHORT_TITLES = {
+  networking: 'Networking & 5G mobility',
+  software: 'Software development',
+  ai: 'AI consulting',
+  'digital-twin': 'Digital twin integration',
+  infrastructure: 'Cabling & data centers',
+  surveillance: 'Video surveillance & monitoring',
+}
+
+/**
+ * [{ id, label }] for the footer, derived from the catalog so the two
+ * cannot disagree about which services exist.
+ *
+ * A service with no short label falls back to its full title rather
+ * than vanishing from the footer - a slightly long line is a far better
+ * failure than a silently missing service, which is the exact bug this
+ * replaces.
+ */
+export const footerServiceLinks = services.map((s) => ({
+  id: s.id,
+  label: SHORT_TITLES[s.id] ?? s.title,
+}))

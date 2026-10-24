@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import Logo from './Logo.jsx'
+import { footerServiceLinks } from '../data/services.jsx'
 
 export default function Footer() {
   return (
@@ -17,11 +18,19 @@ export default function Footer() {
           <div>
             <h4>Services</h4>
             <ul>
-              <li><Link to="/services">Networking &amp; 5G mobility</Link></li>
-              <li><Link to="/services">Software development</Link></li>
-              <li><Link to="/services">AI consulting</Link></li>
-              <li><Link to="/services">Digital twin integration</Link></li>
-              <li><Link to="/services">Cabling &amp; data centers</Link></li>
+              {/* Derived from the service catalog - see
+                  footerServiceLinks. Previously five hand-typed lines
+                  that stayed five after a sixth service shipped. */}
+              {/* Plain /services, no "#id" fragment. This app uses
+                  HashRouter, so `to="/services#surveillance"` renders as
+                  "#/services#surveillance" - two hashes, which the
+                  browser will not scroll to. The served static site does
+                  use real anchors, because it has real directory URLs. */}
+              {footerServiceLinks.map((s) => (
+                <li key={s.id}>
+                  <Link to="/services">{s.label}</Link>
+                </li>
+              ))}
             </ul>
           </div>
           <div>

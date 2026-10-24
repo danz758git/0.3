@@ -84,9 +84,28 @@ find no way to ask for it. Both copies are now correct and agree.
 
 **If you change content, change it in both, and grep for the old
 wording afterwards.** Within `/source` the service list, the contact
-dropdown and the "Six disciplines" counts are all derived from
-`src/data/services.jsx`, so adding a service there is enough - but the
-served HTML still has to be edited by hand.
+dropdown, the footer column and the "Six disciplines" counts are all
+derived from `src/data/services.jsx`, so adding a service there is
+enough - but the served HTML still has to be edited by hand.
+
+### The brochure is a third copy
+
+`downloads/apex-integration-brochure.pdf` lists the services too, and
+it drifted the same way - page 2 still said "Five disciplines" after
+the sixth shipped.
+
+The PDF was produced by ReportLab, but **the script that produced it
+was never kept**, so the binary is the only artifact. Rather than
+rebuild it and lose the original design,
+`source/tools/add_surveillance_to_brochure.py` edits page 2 of the
+existing PDF: it splits the content stream into groups, translates each
+with `q ... cm ... Q` instead of rewriting coordinates, and clones the
+Cabling block for the new entry. Page 1 comes through byte-identical.
+
+That script is in the repo so the next brochure change has a starting
+point. It is not a general-purpose generator - it asserts the layout it
+expects and stops rather than producing a quietly broken page. Check
+any output by eye; the arithmetic is in its docstring.
 
 Fixing this properly means building from `/source` and deploying
 `dist/`, so there is one copy instead of two. Worth doing the next time
