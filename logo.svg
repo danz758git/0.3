@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" role="img" aria-label="Apex Integration — See the bigger picture">
+  <!-- Pterosaur mark: faceted silhouette, soaring right -->
+  <g>
+    <!-- far wing (raised, behind) -->
+    <path d="M330 118 L468 30 L380 104 L352 116 Z" fill="#C77F1F"/>
+    <!-- body, head crest and beak -->
+    <path d="M472 104 L410 90 L380 54 L376 92 L340 106 L238 146 L318 126 L408 106 Z" fill="#0E1420"/>
+    <!-- near wing (sweeping down toward viewer) -->
+    <path d="M352 112 L272 84 L128 206 L300 138 Z" fill="#E9A23B"/>
+    <!-- eye glint -->
+    <circle cx="404" cy="95" r="3" fill="#E9A23B"/>
+  </g>
+
+  <!-- contour arcs beneath the flight path -->
+  <g fill="none" stroke="#0E1420" stroke-opacity="0.18" stroke-width="2">
+    <path d="M170 250 Q320 214 470 250"/>
+    <path d="M204 272 Q320 242 436 272"/>
+    <path d="M238 292 Q320 270 402 292"/>
+  </g>
+
+  <!-- wordmark -->
+  <text x="320" y="345" text-anchor="middle"
+        font-family="Sora, Avenir, 'Segoe UI', Arial, sans-serif"
+        font-size="52" font-weight="700" letter-spacing="6" fill="#0E1420">APEX</text>
+  <text x="320" y="376" text-anchor="middle"
+        font-family="Sora, Avenir, 'Segoe UI', Arial, sans-serif"
+        font-size="19" font-weight="600" letter-spacing="10.5" fill="#0E1420">INTEGRATION</text>
+
+  <!-- motto -->
+  <g font-family="'IBM Plex Mono', 'Courier New', monospace" font-size="14" letter-spacing="3" fill="#C77F1F">
+    <text x="320" y="406" text-anchor="middle">SEE THE BIGGER PICTURE</text>
+  </g>
+</svg>

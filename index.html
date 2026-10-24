@@ -1,184 +1,101 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>EdgeLantern — Protect what you love, from the edge.</title>
-<meta name="description" content="AI-native security cameras that process everything locally. Your footage stays on your premises, always. NDAA-safe hardware, built for real businesses.">
-
-<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apex Integration — Enterprise IT Systems Integrator | Waterloo, Ontario</title>
+  <meta name="description" content="Apex Integration designs and operates enterprise systems end to end: resilient multi-path networking, 5G and satellite mobility, custom software, AI consulting, digital twins, and data center infrastructure. Waterloo, Ontario." />
+  <link rel="canonical" href="https://apexintegration.ca/" />
+  <meta property="og:title" content="Apex Integration — Enterprise IT Systems Integrator | Waterloo, Ontario" />
+  <meta property="og:description" content="Apex Integration designs and operates enterprise systems end to end: resilient multi-path networking, 5G and satellite mobility, custom software, AI consulting, digital twins, and data center infrastructure. Waterloo, Ontario." />
+  <meta property="og:url" content="https://apexintegration.ca/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://apexintegration.ca/logo.svg" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/style.css" />
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RR1TFF7DB2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-RR1TFF7DB2');
+  </script>
 </head>
 <body>
-
-<a class="skip-link" href="#main">Skip to content</a>
-
-<header class="site-header">
-  <div class="wrap header-inner">
-    <a href="#" class="wordmark">EdgeLantern</a>
-    <a href="#early-access" class="btn btn-small">Get early access</a>
-  </div>
-</header>
-
-<main id="main">
-
-  <!-- HERO -->
-  <section class="hero">
-    <div class="glow glow-hero" aria-hidden="true"></div>
-    <div class="wrap hero-inner">
-      <p class="eyebrow">EdgeLantern</p>
-      <h1>Protect what you love,<br>from the edge.</h1>
-      <p class="hero-sub">AI-native security cameras that watch from right where you are —
-        not from someone else's cloud. Your footage stays on your premises, always.</p>
-      <div class="hero-actions">
-        <a href="#early-access" class="btn">Get early access</a>
-        <a href="#story" class="btn btn-ghost">How it works</a>
-      </div>
+  <header class="nav">
+    <div class="container nav__inner">
+      <a href="/" class="nav__brand">
+        <svg viewBox="120 20 360 200" height="34" role="img" aria-label="Apex Integration mark">
+          <path d="M330 118 L468 30 L380 104 L352 116 Z" fill="#C77F1F"/>
+          <path d="M472 104 L410 90 L380 54 L376 92 L340 106 L238 146 L318 126 L408 106 Z" fill="#F3F5F2"/>
+          <path d="M352 112 L272 84 L128 206 L300 138 Z" fill="#E9A23B"/>
+        </svg>
+        <span class="nav__name">APEX <span>INTEGRATION</span></span>
+      </a>
+      <nav aria-label="Main">
+        <ul class="nav__links" id="nav-links">
+          <li><a href="/" class="active">Home</a></li>
+          <li><a href="/services/">Services</a></li>
+          <li><a href="/about/">About</a></li>
+          <li><a href="/contact/">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="/contact/" class="btn btn--amber nav__cta">Start a project</a>
+      <button class="nav__toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M3 7h18M3 12h18M3 17h18"/>
+        </svg>
+      </button>
     </div>
-    <div class="edge-line" aria-hidden="true"></div>
-  </section>
+  </header>
 
-  <!-- PROBLEM / SOLUTION -->
-  <section class="section" id="compare">
-    <div class="wrap">
-      <p class="eyebrow eyebrow-center">The choice in front of you</p>
-      <h2 class="section-title center">There's a better way to watch over what matters</h2>
+  <main id="app">
+    <section class="hero"><svg class="hero__contours" viewBox="0 0 1200 700" preserveAspectRatio="xMidYMax slice" aria-hidden="true"><g fill="none" stroke="#E9A23B" stroke-opacity="0.16" stroke-width="1.5"><path d="M 900 620 q -240 -170 -60 -300 q 150 -105 330 -30 q 200 85 120 230 q -85 155 -390 100 Z"/><path d="M 880 585 q -190 -140 -45 -250 q 125 -90 275 -25 q 165 70 100 190 q -70 130 -330 85 Z"/><path d="M 865 550 q -145 -110 -30 -200 q 100 -75 220 -20 q 130 55 80 150 q -55 105 -270 70 Z"/><path d="M 850 515 q -100 -80 -18 -148 q 72 -55 160 -15 q 95 40 58 110 q -40 78 -200 53 Z"/><path d="M 300 700 q -220 -120 -90 -260 q 110 -115 300 -75 q 210 45 160 200 q -50 160 -370 135 Z"/><path d="M 290 655 q -170 -95 -70 -205 q 88 -92 235 -60 q 165 36 126 158 q -40 125 -291 107 Z"/><path d="M 280 610 q -125 -70 -50 -152 q 65 -70 172 -45 q 122 27 93 117 q -30 92 -215 80 Z"/></g><g fill="none" stroke="#8FB6C9" stroke-opacity="0.10" stroke-width="1"><path d="M 0 480 Q 300 430 600 470 T 1200 450"/><path d="M 0 540 Q 300 495 600 530 T 1200 515"/><path d="M 0 600 Q 300 560 600 592 T 1200 578"/></g></svg><div class="container" style="position:relative"><svg class="hero__mark" viewBox="100 10 390 210" aria-hidden="true"><path d="M330 118 L468 30 L380 104 L352 116 Z" fill="#C77F1F"/><path d="M472 104 L410 90 L380 54 L376 92 L340 106 L238 146 L318 126 L408 106 Z" fill="#F3F5F2"/><path d="M352 112 L272 84 L128 206 L300 138 Z" fill="#E9A23B"/></svg><div class="hero__inner"><p class="hero__motto">Apex Integration</p><h1>See the <em>bigger picture</em>. We integrate everything beneath it.</h1><p class="hero__sub">From the cable in the wall to the AI in your workflow, Apex Integration designs, connects, and operates enterprise systems as one coherent whole — networks that refuse to drop, software that fits, and digital twins that let you see it all at once.</p><div class="hero__actions"><a href="/contact/" class="btn btn--amber">Start a project</a><a href="/services/" class="btn btn--ghost">Explore services</a></div></div></div></section><section class="stats"><div class="container stats__grid"><div class="stat"><div class="stat__num">End to end</div><div class="stat__label">From structured cabling to AI strategy — one accountable partner</div></div><div class="stat"><div class="stat__num">Multi-path</div><div class="stat__label">Cellular, satellite, and fixed lines bonded for continuity</div></div><div class="stat"><div class="stat__num">Days, not quarters</div><div class="stat__label">Digital twin deployments that reach value fast</div></div><div class="stat"><div class="stat__num">Certified partners</div><div class="stat__label">Built on field-proven platforms trusted worldwide</div></div></div></section><section class="section"><div class="container"><p class="eyebrow">What we do</p><h2>Six disciplines. One integrated view.</h2><p class="lede">Most vendors sell you a piece. We take responsibility for how the pieces work together — physical layer, network, software, intelligence, surveillance, and the spatial view that ties them into one picture.</p><div class="svc-grid"><article class="svc-card"><div class="svc-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20v-6"/><circle cx="12" cy="20" r="1.4" fill="currentColor" stroke="none"/><path d="M7.5 10.5a6.4 6.4 0 0 1 9 0"/><path d="M4.6 7.4a10.5 10.5 0 0 1 14.8 0"/><path d="M2 4.2a14.5 14.5 0 0 1 20 0"/></svg></div><span class="svc-card__tag">Connect</span><h3>Enterprise Networking &amp; 5G Mobility</h3><p>Resilient networks that blend fiber, cellular, and satellite links — engineered to stay up when any single connection fails.</p></article><article class="svc-card"><div class="svc-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 8l-4 4 4 4"/><path d="M16 8l4 4-4 4"/><path d="M13.5 5l-3 14"/></svg></div><span class="svc-card__tag">Build</span><h3>Outsourced Software Development</h3><p>A senior engineering team on demand — web platforms, integrations, and internal tools delivered to production standards.</p></article><article class="svc-card"><div class="svc-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="7" width="10" height="10" rx="2"/><path d="M9 3v3M15 3v3M9 18v3M15 18v3M3 9h3M3 15h3M18 9h3M18 15h3"/></svg></div><span class="svc-card__tag">Reason</span><h3>AI Consulting</h3><p>Practical AI adoption: identify the use cases that pay off, then build and integrate them safely into your workflows.</p></article><article class="svc-card"><div class="svc-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 4.5v9L12 20l-8-4.5v-9L12 2z"/><path d="M12 2v9m0 0l8-4.5M12 11l-8-4.5"/><path d="M12 20v-9" stroke-dasharray="2 2.5"/></svg></div><span class="svc-card__tag">Mirror</span><h3>Digital Twin Integration</h3><p>Interactive 3D replicas of your facilities and infrastructure, connected to live data — explore, simulate, and operate remotely.</p></article><article class="svc-card"><div class="svc-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="6" rx="1.5"/><rect x="4" y="12" width="16" height="6" rx="1.5"/><path d="M7.5 6h.01M7.5 15h.01" stroke-width="2.6"/><path d="M12 6h5M12 15h5"/></svg></div><span class="svc-card__tag">Ground</span><h3>Cabling &amp; Data Center Solutions</h3><p>Structured cabling, racks, power, and cooling — the physical layer done right, documented, and built to grow.</p></article><article class="svc-card"><div class="svc-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4.5v9"/><path d="M3 9h3.5"/><rect x="6.5" y="6" width="10" height="6" rx="1.8"/><circle cx="19.5" cy="9" r="1.8"/></svg></div><span class="svc-card__tag">Watch</span><h3>Video Surveillance &amp; Monitoring</h3><p>Camera systems that record and analyse on site — people and vehicle detection, remote review from anywhere, and footage that stays on your property. NDAA-safe hardware throughout.</p></article><article class="svc-card" style="background:var(--ink);color:var(--text-inv);border-color:var(--ink);justify-content:center"><h3 style="color:var(--amber)">Not sure where to start?</h3><p style="color:var(--text-inv-dim)">Tell us the outcome you need. We’ll map the shortest route to it.</p><a href="/contact/" class="btn btn--amber" style="align-self:flex-start">Talk to an engineer</a></article></div></div></section><section class="section section--ink"><div class="container feature"><div class="feature__copy"><p class="eyebrow">Connectivity that holds</p><h2>Networks built to keep working when standard networks give up</h2><p class="lede">Most networking assumes the internet always works. Ours doesn’t. We provision connectivity that bonds multiple paths — 5G/LTE cellular, satellite, and fixed lines — into a single resilient connection, so a failed link is a non-event, not an outage.</p><ul class="feature__points"><li><span class="feature__bullet" aria-hidden="true"></span><div><strong>Unbreakable by design</strong><span>Traffic flows across every available path; when one drops, the rest carry on without missing a session.</span></div></li><li><span class="feature__bullet" aria-hidden="true"></span><div><strong>Anywhere your operation goes</strong><span>Branches, vehicles, vessels, and remote sites — coverage that follows the work across dead zones and borders.</span></div></li><li><span class="feature__bullet" aria-hidden="true"></span><div><strong>Managed from one screen</strong><span>Zero-touch provisioning and cloud-based remote management scale from one router to an entire fleet.</span></div></li></ul></div><div class="feature__visual"><svg viewBox="0 0 520 360" role="img" aria-label="Multiple network paths bonded into one resilient connection"><rect width="520" height="360" fill="#1A2434"/><g font-family="'IBM Plex Mono',monospace" font-size="11" fill="#97A3B2"><text x="30" y="66">CELLULAR 5G</text><text x="30" y="156">SATELLITE</text><text x="30" y="246">FIXED LINE</text><text x="404" y="150" fill="#E9A23B">ONE RESILIENT</text><text x="404" y="166" fill="#E9A23B">CONNECTION</text></g><g stroke="#8FB6C9" stroke-width="2" fill="none" stroke-opacity="0.75"><path d="M30 84 C 140 84, 200 150, 300 168"/><path d="M30 174 C 130 174, 210 172, 300 176"/><path d="M30 264 C 140 264, 200 200, 300 184"/></g><g stroke="#E9A23B" stroke-width="5" stroke-linecap="round"><path d="M300 176 L 480 176"/></g><circle cx="300" cy="176" r="10" fill="#E9A23B"/><circle cx="300" cy="176" r="18" fill="none" stroke="#E9A23B" stroke-opacity="0.4"/><text x="262" y="216" fill="#F3F5F2" font-family="'IBM Plex Mono',monospace" font-size="11">BONDED</text><g stroke="#97A3B2" stroke-opacity="0.35" stroke-dasharray="3 5" fill="none"><path d="M30 300 H 480"/></g><text x="30" y="326" font-family="'IBM Plex Mono',monospace" font-size="10" fill="#5D6B7C">AUTOMATIC FAILOVER · ZERO-TOUCH REMOTE MANAGEMENT</text></svg></div></div></section><section class="section section--cloud"><div class="container feature feature--flip"><div class="feature__copy"><p class="eyebrow">The bigger picture, literally</p><h2>Your facility, mirrored as a living digital twin</h2><p class="lede">We turn complex infrastructure — data centers, plants, campuses — into interactive 3D environments connected to live operational data. Explain systems faster, rehearse changes before you build, and run day-to-day operations with full spatial context.</p><ul class="feature__points"><li><span class="feature__bullet" aria-hidden="true"></span><div><strong>Design, simulate, then build</strong><span>Test scenarios and upgrades virtually before breaking ground or touching production.</span></div></li><li><span class="feature__bullet" aria-hidden="true"></span><div><strong>Live data, in context</strong><span>Telemetry from building and monitoring systems appears where it belongs — on the equipment itself.</span></div></li><li><span class="feature__bullet" aria-hidden="true"></span><div><strong>One twin, many jobs</strong><span>Reuse the same spatial foundation for sales demos, training, operations, and planning.</span></div></li></ul></div><div class="feature__visual"><svg viewBox="0 0 520 360" role="img" aria-label="A facility mirrored as a live digital twin"><rect width="520" height="360" fill="#0E1420"/><g stroke="#8FB6C9" stroke-width="2" fill="none"><path d="M80 210 L150 175 L220 210 L150 245 Z"/><path d="M80 210 v40 L150 285 v-40"/><path d="M220 210 v40 L150 285"/><path d="M150 175 v-30 L185 128 L220 145 v30" opacity="0.7"/></g><text x="80" y="318" font-family="'IBM Plex Mono',monospace" font-size="11" fill="#97A3B2">PHYSICAL FACILITY</text><g stroke="#E9A23B" stroke-width="2" fill="none" stroke-dasharray="4 6"><path d="M235 190 C 270 160, 290 160, 322 188"/><path d="M322 240 C 290 268, 270 268, 235 240"/></g><g fill="#E9A23B" font-family="'IBM Plex Mono',monospace" font-size="10"><text x="248" y="152">LIVE TELEMETRY</text><text x="252" y="288">CONTROL</text></g><g stroke="#E9A23B" stroke-width="2" fill="rgba(233,162,59,0.06)"><path d="M320 210 L390 175 L460 210 L390 245 Z"/><path d="M320 210 v40 L390 285 v-40"/><path d="M460 210 v40 L390 285"/><path d="M390 175 v-30 L425 128 L460 145 v30" opacity="0.8"/></g><circle cx="440" cy="160" r="4" fill="#E9A23B"/><circle cx="352" cy="228" r="4" fill="#E9A23B"/><circle cx="405" cy="262" r="4" fill="#E9A23B"/><text x="320" y="318" font-family="'IBM Plex Mono',monospace" font-size="11" fill="#E9A23B">OPERATIONAL TWIN</text></svg></div></div></section><section class="section"><div class="container"><div class="cta-band"><div><h2>Ready to see your systems from above?</h2><p>Tell us what you’re building. We’ll bring the map.</p></div><a href="/contact/" class="btn btn--amber">Get in touch</a></div></div></section>
+  </main>
 
-      <div class="compare-grid">
-        <div class="compare-col compare-old">
-          <p class="compare-label">The old way</p>
-          <ul class="compare-list">
-            <li>Footage streamed to someone else's servers</li>
-            <li>Camera hardware you can't fully vet</li>
-            <li>Enterprise pricing for basic protection</li>
-            <li>A system that stops the moment your internet does</li>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <svg viewBox="120 20 360 200" height="40" role="img" aria-label="Apex Integration mark">
+            <path d="M330 118 L468 30 L380 104 L352 116 Z" fill="#C77F1F"/>
+            <path d="M472 104 L410 90 L380 54 L376 92 L340 106 L238 146 L318 126 L408 106 Z" fill="#F3F5F2"/>
+            <path d="M352 112 L272 84 L128 206 L300 138 Z" fill="#E9A23B"/>
+          </svg>
+          <p class="footer__motto">See the bigger picture</p>
+          <p style="max-width:38ch;font-size:.95rem">Apex Integration designs, builds, and operates the systems that keep modern organizations connected, informed, and moving.</p>
+        </div>
+        <div>
+          <h4>Services</h4>
+          <ul>
+            <li><a href="/services/#networking">Networking &amp; 5G mobility</a></li>
+            <li><a href="/services/#software">Software development</a></li>
+            <li><a href="/services/#ai">AI consulting</a></li>
+            <li><a href="/services/#digital-twin">Digital twin integration</a></li>
+            <li><a href="/services/#infrastructure">Cabling &amp; data centers</a></li>
           </ul>
         </div>
-        <div class="compare-divider" aria-hidden="true">
-          <div class="compare-divider-glow"></div>
-        </div>
-        <div class="compare-col compare-new">
-          <p class="compare-label compare-label-glow">The edge way</p>
-          <ul class="compare-list">
-            <li>Video stays on your property, period</li>
-            <li>NDAA-safe hardware, sourced and verified</li>
-            <li>AI-native detection, priced for real businesses</li>
-            <li>Keeps watching even when the network drops</li>
+        <div>
+          <h4>Company</h4>
+          <ul>
+            <li><a href="/about/">About us</a></li>
+            <li><a href="/contact/">Contact</a></li>
+            <li><a href="/contact/">Start a project</a></li>
+            <li><a href="/downloads/apex-integration-brochure.pdf" download>Company brochure (PDF)</a></li>
           </ul>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- STORY -->
-  <section class="section section-story" id="story">
-    <div class="glow glow-story" aria-hidden="true"></div>
-    <div class="wrap">
-      <p class="eyebrow eyebrow-center">Why "edge," why "lantern"</p>
-      <blockquote class="story-quote">
-        A lantern doesn't watch from a distant tower.<br>
-        It stands right at the edge — right where you are —<br>
-        casting light exactly where it's needed.
-      </blockquote>
-      <div class="story-body">
-        <p>That's the idea behind EdgeLantern. Security that lives at the edge of your
-          property, not in a data center somewhere else. Every camera we deploy processes
-          what it sees locally, on hardware you can trust, so what you're protecting never
-          leaves your hands.</p>
-        <p>This isn't security that watches you back. It's a light you control — standing
-          guard over the people, property, and places you care about most.</p>
+      <div class="footer__bar">
+        <span>© <span id="year"></span> Apex Integration. All rights reserved.</span>
+        <span>Enterprise systems, integrated end to end.</span>
       </div>
     </div>
-  </section>
+  </footer>
 
-  <!-- TRUST STRIP -->
-  <section class="section section-trust">
-    <div class="wrap">
-      <div class="trust-grid">
-        <div class="trust-item">
-          <div class="trust-mark" aria-hidden="true"></div>
-          <h3>NDAA-safe hardware</h3>
-          <p>Every component sourced and verified. No banned silicon, ever.</p>
-        </div>
-        <div class="trust-item">
-          <div class="trust-mark" aria-hidden="true"></div>
-          <h3>Stays on your premises</h3>
-          <p>Your video never leaves the property it's protecting.</p>
-        </div>
-        <div class="trust-item">
-          <div class="trust-mark" aria-hidden="true"></div>
-          <h3>AI-native detection</h3>
-          <p>Built for real recognition — people, vehicles, activity — not just motion alerts.</p>
-        </div>
-        <div class="trust-item">
-          <div class="trust-mark" aria-hidden="true"></div>
-          <h3>Always watching, always yours</h3>
-          <p>Keeps recording even if the internet goes down.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- EARLY ACCESS -->
-  <section class="section section-access" id="early-access">
-    <div class="edge-line edge-line-top" aria-hidden="true"></div>
-    <div class="glow glow-access" aria-hidden="true"></div>
-    <div class="wrap access-wrap">
-      <p class="eyebrow eyebrow-center">Early access</p>
-      <h2 class="section-title center">Be first to deploy EdgeLantern</h2>
-      <p class="access-sub">We're onboarding a small group of early partners.
-        No pricing pitch — just a conversation about your site.</p>
-
-      <form id="early-access-form" class="access-form" action="https://formspree.io/f/mwvgdkjb" method="POST">
-        <div class="form-row">
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" required autocomplete="name">
-        </div>
-        <div class="form-row">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" required autocomplete="email">
-        </div>
-        <div class="form-row">
-          <label for="company">Company</label>
-          <input type="text" id="company" name="company" required autocomplete="organization">
-        </div>
-        <div class="form-row">
-          <label for="cameras">Approximate camera count</label>
-          <select id="cameras" name="cameras" required>
-            <option value="" disabled selected>Select a range</option>
-            <option value="1-5">1–5</option>
-            <option value="6-10">6–10</option>
-            <option value="11-20">11–20</option>
-            <option value="21+">21+</option>
-          </select>
-        </div>
-        <div class="form-row form-row-full">
-          <label for="message">Anything else we should know? <span class="optional">(optional)</span></label>
-          <textarea id="message" name="message" rows="4"></textarea>
-        </div>
-        <div class="form-row form-row-full form-submit-row">
-          <button type="submit" class="btn btn-large">Request early access</button>
-          <p class="form-micro" id="form-micro">We'll respond within two business days.</p>
-          <p class="form-success-inline" id="form-success" role="status" aria-live="polite"></p>
-        </div>
-      </form>
-
-    </div>
-  </section>
-
-</main>
-
-<footer class="site-footer">
-  <div class="wrap footer-inner">
-    <span class="wordmark wordmark-footer">EdgeLantern</span>
-    <p class="footer-meta">© 2026 EdgeLantern. All rights reserved.</p>
-    <a href="mailto:hello@edgelantern.com" class="footer-contact">hello@edgelantern.com</a>
-  </div>
-</footer>
-
-<script src="script.js?v=2"></script>
+  <script src="/assets/site.js"></script>
 </body>
 </html>
